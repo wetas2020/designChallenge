@@ -39,8 +39,8 @@ main {
     justify-content: center; /* Horizontally center the content */
     /* gap: 2rem; Add a gap between .product and .description */
     box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.1);
-    margin: auto;
-    margin-top: 1.5rem;
+/*     margin: auto;
+    margin-top: 1.5rem; */
     border-radius: 10px;
     overflow: hidden;
 }
