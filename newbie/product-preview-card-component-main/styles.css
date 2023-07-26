@@ -39,7 +39,7 @@ main {
     justify-content: center; /* Horizontally center the content */
     /* gap: 2rem; Add a gap between .product and .description */
     box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.1);
-/*     margin: auto;
+    /*     margin: auto;
     margin-top: 1.5rem; */
     border-radius: 10px;
     overflow: hidden;
@@ -126,4 +126,18 @@ button {
     cursor: pointer; /* Add a cursor property to indicate clickability */
     margin-top: 1rem;
     border-radius: 10px;
+}
+@media (max-width: 600px) {
+    main {
+        flex-direction: column; /* Change to a single-column layout on smaller screens */
+    }
+
+    main .description {
+        padding: 1rem;
+    }
+
+    main .product,
+    main .description {
+        flex: 1 0 100%;
+    }
 }
