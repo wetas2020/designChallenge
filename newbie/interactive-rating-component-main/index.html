@@ -9,7 +9,7 @@
     </head>
     <body>
         <!-- Rating state start -->
-        <main>
+        <main id="rating_card">
             <div class="img_container">
                 <img src="images/icon-star.svg" alt="star" />
             </div>
@@ -20,23 +20,29 @@
                 to help us improve our offering!
             </p>
             <div>
-                <button class="rate_buttons">1</button><button class="rate_buttons">2</button
-                ><button class="rate_buttons">3</button><button class="rate_buttons">4</button
-                ><button class="rate_buttons">5</button>
+                <button class="rate_buttons">1</button>
+                <button class="rate_buttons">2</button><button class="rate_buttons">3</button>
+                <button class="rate_buttons">4</button><button class="rate_buttons">5</button>
             </div>
-
-            <button class="submit"><strong>SUBMIT</strong></button>
+            <button id="submit" class="submit"><strong>SUBMIT</strong></button>
         </main>
 
         <!-- Rating state end -->
 
         <!-- Thank you state start -->
-
-        You selected
-        <!-- Add rating here -->
-        out of 5 Thank you! We appreciate you taking the time to give a rating. If you ever need
-        more support, don’t hesitate to get in touch!
-
+        <main id="submit_card" class="submit_card" style="display: none">
+            <div class="img_container">
+                <img src="images/illustration-thank-you.svg" alt="star" width="162" height="81" />
+            </div>
+            <p class="thankyou_title">You selected <span id="score">x</span> out of 5</p>
+            <!-- Add rating here -->
+            <h2 class="thankyou_heading">Thank you!</h2>
+            <p class="thankyou_paragraph">
+                We appreciate you taking the time to give a rating. If you ever need more support,
+                don’t hesitate to get in touch!
+            </p>
+        </main>
         <!-- Thank you state end -->
+        <script src="index.js"></script>
     </body>
 </html>

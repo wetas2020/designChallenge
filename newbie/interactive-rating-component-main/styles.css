@@ -77,7 +77,7 @@ main > p {
     border-radius: 50%;
     border: 0;
     background-color: var(--Dark-Blue);
-    margin-right: 10.4px;
+    margin-right: 8px;
     color: var(--Light-Grey);
     cursor: pointer;
     margin-bottom: 1rem;
@@ -92,4 +92,67 @@ main > p {
     border: 0;
     border-radius: 25px;
     color: var(--White);
+}
+
+.rate_buttons:hover {
+    background-color: var(--Orange);
+    color: var(--White);
+    font-weight: 700;
+}
+
+.selected {
+    background-color: var(--Light-Grey);
+    color: var(--White);
+    font-weight: 700;
+}
+
+.submit:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+    cursor: pointer;
+}
+.submit_card {
+    font-family: 'Overpass';
+}
+
+.submit_card > div {
+    margin: 30px auto;
+}
+
+.thankyou_title {
+    background-color: var(--Dark-Blue);
+    color: var(--Orange);
+    margin-top: 3rem;
+    padding: 0.5rem 3rem;
+    border-radius: var(--fs-xs);
+}
+
+.thankyou_heading {
+    margin-top: 1.5rem;
+    font-weight: 700;
+    color: var(--White);
+    text-align: center;
+}
+
+.thankyou_paragraph {
+    margin-top: 0.5rem;
+    font-weight: 400;
+    font-size: var(--fs-xs);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .rate_buttons {
+        min-width: 30px;
+        min-height: 30px;
+    }
+
+    .submit {
+        min-width: 180px;
+    }
 }
