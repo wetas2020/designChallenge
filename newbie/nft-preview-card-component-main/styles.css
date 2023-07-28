@@ -1,0 +1,54 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Color Variables */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main: hsl(217, 54%, 11%);
+    --Very-dark-blue-card: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    /* Font Size Variables */
+    --fs-xs: 0.875rem; /* Equivalent to 14px */
+    --fs-s: 1rem; /* Equivalent to 16px */
+    --fs-m: 1.125rem; /* Equivalent to 18px */
+    --fs-l: 1.25rem; /* Equivalent to 20px */
+    --fs-xl: 2rem; /* Equivalent to 32px */
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--Very-dark-blue-main);
+}
+
+main {
+    background-color: var(--Very-dark-blue-card);
+    width: 90%;
+    max-width: 400px;
+    padding: 0.8rem;
+    text-align: center;
+    border-radius: 5%;
+}
+
+main > #equilibrium {
+    width: 90%;
+    border-radius: 5%;
+}
+
+main > h3 {
+    color: var(--White);
+    text-align: left;
+    padding: 1.2rem;
+}
