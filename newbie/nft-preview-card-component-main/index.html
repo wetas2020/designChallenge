@@ -3,34 +3,34 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- displays site properly based on user's device -->
-
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-
+        <link rel="stylesheet" href="./style.css" />
         <title>Frontend Mentor | NFT preview card component</title>
-
-        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <main>
-            <img id="equilibrium" src="images/image-equilibrium.jpg" alt="equilibrium" />
-            <h3 class="title">Equilibrium #3429</h3>
-            <p>Our Equilibrium collection promotes balance and calm.</p>
-            <div>
-                <h4>0.041 ETH</h4>
-                <p>3 days left</p>
+        <div class="card">
+            <div class="card-image-container">
+                <img class="card-image" src="images/image-equilibrium.jpg" alt="Equilibrium" />
+                <div class="image-overlay">
+                    <img src="images/icon-view.svg" alt="Overlay Image" class="overlay-img" />
+                </div>
             </div>
-            <hr />
-            <div>
-                <img src="images/image-avatar.png" alt="avatar" />
+            <h2 class="card-title">Equilibrium #3429</h2>
+            <p class="card-text">Our Equilibrium collection promotes balance and calm.</p>
+            <div class="card-footer">
+                <span class="card-price">
+                    <img src="images/icon-ethereum.svg" alt="ethereum" /> 0.041 ETH</span
+                >
+                <span class="time-left"
+                    ><img src="images/icon-clock.svg" alt="clock" />3 days left</span
+                >
             </div>
-            <p>Creation of Jules Wyvern</p>
-        </main>
-
-        <!-- <div class="attribution">
-            Challenge by
-            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
-            >. Coded by <a href="#">Your Name Here</a>.
-        </div> -->
+            <div class="card-footer card-line">
+                <span class="creation-info">
+                    <img class="avatar" src="images/image-avatar.png" alt="profile image" />
+                    Creation of <span class="created_by">Jules Wyvern</span>
+                </span>
+            </div>
+        </div>
     </body>
 </html>
