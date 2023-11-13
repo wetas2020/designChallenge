@@ -156,3 +156,44 @@ body {
     opacity: 1;
     transform: scale(1.1);
 }
+/* Responsive styles */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .card-image-container {
+        height: auto;
+    }
+
+    .card-footer,
+    .card-footer + .card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card-price,
+    .time-left {
+        margin-bottom: 10px;
+    }
+
+    /* Adjust font sizes if necessary */
+    .card-title {
+        font-size: var(--fs-m);
+    }
+
+    .card-text {
+        font-size: var(--fs-xs);
+    }
+
+    .creation-info {
+        padding: 15px 20px; /* Adjust padding if needed */
+    }
+}
