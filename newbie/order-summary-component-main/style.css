@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --fs-xs: 0.875rem;
+    --fs-s: 1rem;
+    --fs-m: 1.125rem;
+    --fs-l: 1.25rem;
+    --fs-xl: 3.75rem;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: var(--fs-s);
+    background-color: var(--very-pale-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 375px; /* Mobile width */
+    text-align: center;
+    margin: 2rem; /* Add margin to separate the card from the edge of the viewport */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card-header {
+    background-image: url('./images/illustration-hero.svg'); /* Adjust the path as necessary */
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px; /* To maintain the rounded corners */
+    border-top-right-radius: 20px; /* To maintain the rounded corners */
+}
+
+.card-header img {
+    width: 100%;
+    display: block;
+}
+
+.card-content {
+    /* background-color: white; */
+    padding: 1rem;
+}
+
+.card-content h1 {
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+.card-content p {
+    color: var(--desaturated-blue);
+}
+
+.plan {
+    /* background-color: var(--white); */
+    /* border-radius: 10px; */
+    margin: 1rem 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Add shadow for depth (adjust as needed) */
+}
+
+.plan-details {
+    display: flex;
+    align-items: center;
+}
+
+.plan-icon {
+    margin-right: 1rem;
+    /* Ensure the icon's size matches the design */
+    width: 48px; /* Example size, adjust as needed */
+    height: auto;
+}
+
+.plan-info {
+    text-align: left; /* Align text to the left */
+}
+
+.plan-title {
+    color: var(--dark-blue);
+    font-weight: 700;
+    margin: 0; /* Remove default margin */
+}
+
+.plan-price {
+    color: var(--bright-blue);
+    font-weight: 700;
+    margin: 0; /* Remove default margin */
+}
+
+.plan-change {
+    color: var(--bright-blue);
+    font-weight: 700;
+    text-decoration: underline; /* If the design shows an underline */
+    cursor: pointer; /* To indicate it's clickable */
+}
+
+.button-section {
+    background-color: var(--white); /* Set the background color */
+    padding: 1rem; /* Adds padding inside the section */
+    border-bottom-left-radius: 20px; /* Match the card's border-radius */
+    border-bottom-right-radius: 20px; /* Match the card's border-radius */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* Stack the buttons */
+    gap: 0.5rem; /* Adds space between buttons */
+}
+
+.btn {
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: var(--fs-s);
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    margin: 0.5rem; /* Add margin to create space around buttons */
+}
+
+.btn-primary {
+    background-color: var(--bright-blue);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: rgb(117, 148, 240);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--desaturated-blue);
+}
+
+.btn-secondary:hover {
+    font-size: large;
+    color: var(--dark-blue);
+}
+
+.plan-change:hover {
+    color: var(--desaturated-blue);
+}
+
+/* Responsive design adjustments */
+@media (min-width: 768px) {
+    /* Adjust for tablets and up */
+    .card {
+        max-width: 540px; /* Wider than mobile, but not as wide as a full desktop */
+        margin: 4rem auto; /* More margin on larger screens */
+    }
+}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree+Display:wght@600;800&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+    --yellow: hsl(47, 88%, 63%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --fs-xs: 0.875rem;
+    --fs-s: 1rem;
+    --fs-m: 1.125rem;
+    --fs-l: 1.25rem;
+    --fs-xl: 3.75rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    font-size: var(--fs-s);
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.illustration {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    object-fit: cover;
+}
+
+.ticket {
+    width: 90px;
+    padding: 5px 10px;
+    margin: 10px 0 15px 10px;
+    background-color: var(--yellow);
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.date,
+.description {
+    margin: 0 0 10px 10px;
+    font-size: 0.9rem;
+}
+
+.description {
+    color: hsl(0, 0%, 59%);
+    line-height: 1.5;
+}
+
+h2 {
+    margin: 0 0 10px 10px;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+h2:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 10px;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
