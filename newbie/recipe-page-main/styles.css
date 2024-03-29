@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+    /* Colors */
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+
+    /* Font sizes */
+    --fs-xs: 0.875rem;
+    --fs-s: 1rem;
+    --fs-m: 1.125rem;
+    --fs-l: 2.25rem;
+    --fs-xl: 3.75rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Young Serif', serif;
+    font-size: var(--fs-s);
+    background-color: var(--rose-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: var(--white);
+    margin: 6rem;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: var(--fs-l);
+    color: #000;
+    font-weight: 400;
+    margin: 1rem;
+}
+
+.card img.recipe-image {
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.card p.description {
+    font-family: 'Outfit', sans-serif;
+    font-size: var(--fs-s);
+    color: var(--wenge-brown);
+    margin: 1rem;
+}
+
+.card .preparation-time h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: --var(fs-m);
+    margin-left: 2rem;
+    margin-top: 2rem;
+    color: var(--dark-raspberry);
+}
+
+.card .preparation-time li {
+    font-family: 'Outfit', sans-serif;
+    font-size: var(--fs-s);
+    margin-left: 4rem;
+    margin-top: 1rem;
+    color: var(--wenge-brown);
+}
+
+.card .ingredients {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.card .ingredients h3 {
+    font-family: 'Young Serif', serif;
+    font-size: var(--fs-l);
+    font-weight: 400;
+    margin: 1rem;
+    color: var(--nutmeg);
+}
+
+.card .ingredients li {
+    font-family: 'Outfit', sans-serif;
+    font-size: var(--fs-s);
+    margin: 1rem;
+    color: var(--wenge-brown);
+}
+
+.card .instructions {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.card .instructions h3 {
+    font-family: 'Young Serif', serif;
+    font-size: var(--fs-l);
+    font-weight: 400;
+    margin: 1rem;
+    color: var(--nutmeg);
+}
+
+.card .instructions li {
+    font-family: 'Outfit', sans-serif;
+    font-size: var(--fs-s);
+    margin: 1rem;
+    color: var(--wenge-brown);
+}
+
+.card .nutrition {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.card .nutrition h3 {
+    font-family: 'Young Serif', serif;
+    font-size: var(--fs-l);
+    font-weight: 400;
+    margin: 1rem;
+    color: var(--nutmeg);
+}
+
+.card .nutrition p {
+    /*center text */
+    font-family: 'Outfit', sans-serif;
+    font-size: var(--fs-s);
+    margin: 1rem;
+    color: var(--wenge-brown);
+}
+
+.card .nutrition td.macros {
+    font-family: 'Outfit', sans-serif;
+    font-size: var(--fs-s);
+    margin: 1rem;
+    color: var(--wenge-brown);
+}
+
+.card .nutrition td.macros-value {
+    font-family: 'Outfit', sans-serif;
+    font-size: var(--fs-s);
+    margin: 1rem;
+    color: var(--dark-raspberry);
+    font-weight: bold;
+}
+
+li {
+    padding-left: 1em;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table tr {
+    border-bottom: 1px solid var(--eggshell);
+}
+
+table td {
+    padding: 10px;
+    text-align: left;
+}
+
+hr {
+    margin-left: 10px;
+    border: 0;
+    height: 1px;
+    background: var(--eggshell);
+    width: 90%;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: var(--fs-xs); /* Adjust base font size for mobile */
+        padding: 1rem; /* Add padding for mobile view */
+    }
+
+    .card {
+        width: 100%; /* Full width on mobile */
+        margin: 1rem 0; /* Less margin on the top and bottom */
+    }
+
+    h1 {
+        font-size: var(--fs-m); /* Adjust heading font size for mobile */
+        color: var(--nutmeg); /* Adjust heading color for mobile */
+        margin: 1rem; /* Adjust heading margin for mobile */
+    }
+
+    .card img.recipe-image {
+        height: auto; /* Maintain aspect ratio */
+        padding: 0; /* Remove padding */
+        border-radius: 0; /* Remove border-radius */
+    }
+
+    .card .preparation-time h3,
+    .card .ingredients h3,
+    .card .instructions h3,
+    .card .nutrition h3 {
+        font-size: var(--fs-m); /* Adjust subheading font size for mobile */
+    }
+
+    .card .preparation-time {
+        background-color: #fdebf8;
+        border-radius: 10px;
+        padding: 10px;
+        padding-bottom: 30px;
+    }
+
+    .card .preparation-time li,
+    .card .ingredients li,
+    .card .instructions li,
+    .card .nutrition td.macros,
+    .card .nutrition td.macros-value {
+        font-size: var(--fs-xs); /* Adjust list font size for mobile */
+    }
+
+    li {
+        padding-left: 0.5em; /* Adjust list item padding for mobile */
+    }
+
+    table {
+        width: 100%; /* Ensure table is not wider than the screen */
+    }
+
+    table tr {
+        border-bottom: 1px solid var(--eggshell);
+    }
+
+    table td {
+        padding: 0.5rem; /* Adjust table cell padding for mobile */
+    }
+
+    hr {
+        margin-left: 0;
+        width: calc(100% - 2rem); /* Adjust hr width for mobile */
+    }
+}
